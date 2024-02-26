@@ -1,0 +1,60 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(120deg, blueviolet,pink, white);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*
+ display: flex - alinhar os q estão dentro
+ flex-direction: column 
+ aling-items - vertical
+ justify-content - horizontal 
+ gap - da distância entre os objetos com o flex
+*/
+
+.boxCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    background: rgba(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.409);
+    cursor: url("/img/martelo.png"), pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: blueviolet;
+    border-radius: 20px;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.289);
+}
+
+.boxCenter button {
+    outline: none;
+    cursor: pointer;
+}
